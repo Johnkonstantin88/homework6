@@ -565,7 +565,7 @@
           Leave your contacts and we will call you back
         </p>
         <form class="callback-form">
-          <div class="form-field">
+          <div class="form-field input-field">
             <label class="form-label"> Name </label>
             <div class="field">
               <input type="text" name="username" autocomplete="off"/>
@@ -575,31 +575,42 @@
               </svg>
             </div>
           </div>
-          <div class="form-field">
+          <div class="form-field input-field">
             <label class="form-label"> Phone </label>
             <div class="field">
               <input type="tel" name="phone" autocomplete="off"/>
           
-              <svg class="input-icon" width="13" height="13" aria-label="person">
+              <svg class="input-icon" width="13" height="13" aria-label="phone">
                 <use href="./images/srpite.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
-          <div class="form-field">
+          <div class="form-field input-field">
             <label class="form-label"> Email </label>
             <div class="field">
               <input type="email" name="email" autocomplete="on"/>
           
-              <svg class="input-icon" width="15" height="12" aria-label="person">
+              <svg class="input-icon" width="15" height="12" aria-label="email">
                 <use href="./images/srpite.svg#icon-email"></use>
               </svg>
             </div>
           </div>
-          <div class="form-field">
+          <div class="form-field area-field">
             <label class="form-label"> Comment </label>
             <textarea name="comment" placeholder="Text input"></textarea>
           </div>
-        </form>
+            <div class="checkbox-field">
+              <label class="checkbox-text">
+                <input type="checkbox" name="accept" class="checkbox">
+                 <span class="span-svg">
+                <svg class="icon-click" width="16" height="16" aria-label="accept">
+                  <use href="./images/srpite.svg#icon-click"></use>
+                </svg>
+               </span> I accept the terms and conditions of the <a href="" class="policy-link">Privacy Policy</a>
+               
+              </label>
+            </div>             
+       </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
