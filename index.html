@@ -565,39 +565,43 @@
           Leave your contacts and we will call you back
         </p>
         <form class="callback-form">
-          <div class="form-field input-field">
-            <label class="form-label"> Name </label>
+          <div class="form-field">
+            <label class="form-label" for="username"> Name </label>
             <div class="field">
-              <input type="text" name="username" autocomplete="off"/>
-              
-              <svg class="input-icon" width="12" height="12" aria-label="person">
-                <use href="./images/srpite.svg#icon-person"></use>
-              </svg>
+              <input type="text" name="username" class="form-input" id="username" autocomplete="off"/>
+              <span class="span-icon">
+                <svg class="input-icon" width="12" height="12" aria-label="person">
+                  <use href="./images/srpite.svg#icon-person"></use>
+                </svg>
+              </span>
             </div>
           </div>
-          <div class="form-field input-field">
-            <label class="form-label"> Phone </label>
+          <div class="form-field">
+            <label class="form-label" for="userphone"> Phone </label>
             <div class="field">
-              <input type="tel" name="phone" autocomplete="off"/>
+              <input type="tel" name="phone" class="form-input" id="userphone" autocomplete="off"/>
           
-              <svg class="input-icon" width="13" height="13" aria-label="phone">
-                <use href="./images/srpite.svg#icon-phone"></use>
-              </svg>
+              <span class="span-icon">
+                <svg class="input-icon" width="13" height="13" aria-label="phone">
+                  <use href="./images/srpite.svg#icon-phone"></use>
+                </svg>
+              </span>
             </div>
           </div>
-          <div class="form-field input-field">
-            <label class="form-label"> Email </label>
+          <div class="form-field">
+            <label class="form-label" for="usermail"> Email </label>
             <div class="field">
-              <input type="email" name="email" autocomplete="on"/>
-          
-              <svg class="input-icon" width="15" height="12" aria-label="email">
-                <use href="./images/srpite.svg#icon-email"></use>
-              </svg>
+              <input type="email" name="email" class="form-input" id="usermail" autocomplete="on"/>
+              <span class="span-icon">
+                <svg class="input-icon" width="15" height="12" aria-label="email">
+                  <use href="./images/srpite.svg#icon-email"></use>
+                </svg>
+              </span>
             </div>
           </div>
-          <div class="form-field area-field">
-            <label class="form-label"> Comment </label>
-            <textarea name="comment" placeholder="Text input"></textarea>
+          <div class="form-field">
+            <label class="form-label" for="comment"> Comment </label>
+            <textarea name="comment"  class="textarea" id="comment" placeholder="Text input"></textarea>
           </div>
             <div class="checkbox-field">
               <label class="checkbox-text">
@@ -607,9 +611,9 @@
                   <use href="./images/srpite.svg#icon-click"></use>
                 </svg>
                </span> I accept the terms and conditions of the <a href="" class="policy-link">Privacy Policy</a>
-               
               </label>
-            </div>             
+            </div> 
+            <button type="submit" class="main-button submit-button">Send</button>            
        </form>
       </div>
     </div>
